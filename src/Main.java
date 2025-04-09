@@ -1,3 +1,8 @@
+import example.Human;
+import db.Database;
+import db.exception.EntityNotFoundException;
+import db.Entity;
+
 public class Main {
     public static void main(String[] args) {
         Human[] humans = {
