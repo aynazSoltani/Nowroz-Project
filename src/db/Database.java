@@ -20,7 +20,7 @@ public class Database {
                 return e;
             }
         }
-        throw new EntityNotFoundException();
+        throw new EntityNotFoundException(id);
     }
 
     public static void delete(int id) {
@@ -30,7 +30,7 @@ public class Database {
                 return;
             }
         }
-        throw new EntityNotFoundException();
+        throw new EntityNotFoundException(id);
     }
 
     public static void update(Entity newEntity) {
